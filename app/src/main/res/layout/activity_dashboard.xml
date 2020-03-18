@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Dashboard">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg">
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:background="@drawable/round"
+                android:text="LogOut"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Form Input Data Berita"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/editTextJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Judul"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/editTextWaktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Waktu"
+            android:inputType="textPersonName"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/editTextPenulis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Penulis"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/editTextIsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Isi"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:background="@drawable/box"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="ADD"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Berita"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="30dp"
+            android:textSize="25dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/box"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+</ScrollView>
